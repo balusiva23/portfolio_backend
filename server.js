@@ -23,7 +23,7 @@ app.post('/send-email', async (req, res) => {
   // Email data
   const mailOptions = {
     from: 'sivabs123@gmail.com',
-    to: `${email}`,
+    to: 'sivabs123@gmail.com',
     subject: subject,
     text: `Name: ${fullname}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${message}`,
   };
@@ -52,7 +52,7 @@ app.post('/submit-form', async (req, res) => {
   // Email data
   const mailOptions = {
     from: 'sivabs123@gmail.com',
-    to: `${email}`,
+    to: 'sivabs123@gmail.com',
     subject: "Resume Downloaded",
     text: `Resume Downloaded :\n
     Name: ${name}\nEmail: ${email}\nMessage: ${comments}`,
